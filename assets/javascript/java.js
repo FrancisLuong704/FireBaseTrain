@@ -37,14 +37,12 @@ $("#submit").on('click', function () {
     var destination = $('#destination-input').val().trim();
     var frequency = $('#frequency-input').val().trim();
     var nextArrival = $('#nextArrival-input').val().trim();
-    var minutesAway = $('#minutesAway-input').val().trim();
 
     database.ref().push({
         name: name,
         destination: destination,
         frequency: frequency,
         nextArrival: nextArrival,
-        minutesAway: minutesAway
     });
 
 })

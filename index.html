@@ -11,12 +11,12 @@
     <title>FIREBASETRAIN</title>
 </head>
 
-<body>
+<body background="assets/images/background.jpg">
     <div class="jumbotron container">
         <h1 class="display-3">ANYTIME IS TRAIN TIME!</h1>
-        <p class="lead">Choo Choo Chee Chee</p>
+        <p class="lead">Choo! Choo!</p>
     </div>
-    <div class="card text-left|center|right container">
+    <div class="card text-center container">
         <table class="table">
             <thead>
                 <tr>
@@ -27,7 +27,7 @@
                     <th>Minutes Away</th>
                 </tr>
             </thead>
-            <tbody id="trainInfo">
+            <tbody id="trainInfo" class="text-center">
             </tbody>
         </table>
     </div>
@@ -53,17 +53,13 @@
             <input type="text" class="form-control" name="nextArrival-input" id="nextArrival-input" aria-describedby="helpId"
                 placeholder="1:30pm">
             <small id="helpId" class="form-text text-muted"></small>
-
-            <label for="minutesAway-input">Minutes Away</label>
-            <input type="number" class="form-control" name="minutesAway-input" id="minutesAway-input" aria-describedby="helpId"
-                placeholder="35">
-            <small id="helpId" class="form-text text-muted"></small>
             <button type="submit" id="submit" class="btn btn-primary">Submit</button>
         </div>
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
     <script src="assets/javascript/java.js"></script>
 </body>
 
